@@ -1,0 +1,185 @@
+/* Common styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*Ensures that the page occupies at least the full height of the viewport.*/
+  min-height: 100vh;
+  /*Create a flex container for the entire page.*/
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Add color for bottom and target the currently selected bottom in the menu.*/
+nav a:hover,
+nav a.selected {
+  background-color: #555;
+}
+
+main {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  /*Allows it to expand and fill the available vertical space.*/
+  flex: 1;
+}
+
+section {
+  /*This adds a solid border around each section*/
+  border: 1px solid #ddd;
+  padding: 10px;
+  /*This adds a bottom margin to create space between sections.*/
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Add to create a color fill behind the section content. It uses a pseudo-element to add a background color to the section.*/
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f2f2f2;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 28px;
+  position: relative;
+}
+
+/* Add line between h1 and menu bar*/
+h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #555;
+  margin: 20px 0;
+}
+
+/* Add border and color for header*/
+h2 {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+h3 {
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+/*Padding to create a text box-like appearance for the section articles.*/
+article {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  /*This collapses the borders of table cells into a single border, providing a unified appearance.*/
+  border-collapse: collapse;
+  /*This adds a bottom margin to create space between the table and other elements.*/
+  margin-bottom: 20px;
+}
+
+/*Add line and color for table*/
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #dad4d4;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  /*Prevents it from shrinking and ensures it remains at the bottom of the page even if the content in the main section is shorter.*/
+  flex-shrink: 0;
+  /*Keeps the footer at the bottom of the viewport.*/
+  position: sticky;
+  bottom: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

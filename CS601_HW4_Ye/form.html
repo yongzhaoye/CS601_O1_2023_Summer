@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Form Validation</h1>
+  <form id="myForm" action="https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5" method="POST">
+    <section>
+        <h2>Name</h2>
+        <!-- First Name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+    </section>
+
+    <section>
+        <!-- Facilitator -->
+        <label for="facilitator">Facilitator:</label>
+        <input type="text" id="facilitator" name="facilitator" required>
+    </section>
+
+    <section>
+        <h2>Gender</h2>
+        <!-- Gender -->
+        <div class="options-section">
+          <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
+          <div>
+            <input type="radio" id="notAnswer" name="gender" value="notAnswer">
+            <label for="notAnswer">Not Answer</label>
+          </div>
+        </div>
+    </section>
+  
+    <section>
+        <h2>Check If Apply</h2>
+        <!-- Check if apply -->
+        <div class="options-section">
+          <div>
+            <input type="checkbox" id="socialist" name="apply" value="socialist">
+            <label for="socialist">Socialist</label>
+          </div>
+          <div>
+            <input type="checkbox" id="esportsEnthusiast" name="apply" value="esportsEnthusiast">
+            <label for="esportsEnthusiast">E-sports enthusiast</label>
+          </div>
+          <div>
+            <input type="checkbox" id="athletes" name="apply" value="athletes">
+            <label for="athletes">Athletes</label>
+          </div>
+          <div>
+            <input type="checkbox" id="fitnessEnthusiast" name="apply" value="fitnessEnthusiast">
+            <label for="fitnessEnthusiast">Fitness enthusiast</label>
+          </div>
+        </div>
+    </section>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

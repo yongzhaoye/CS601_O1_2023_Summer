@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favorite Food</title>
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>My Favorite Food</h1>
+    <nav>
+      <a href="homePage.html">Home</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="homeTown.html">HomeTown</a>
+      <a href="pet.html">Pet</a>
+      <a href="food.html" class="selected">Food</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Delicious Recipes(Click it!)</h2>
+      <div class="food-item">
+        <img src="Images/JajangNoodles.jpg" alt="Jajang Noddle" width="400" height="400" onclick="toggleDescription(1)">
+        <div class="description hidden" id="description1">
+            <p>
+                Jajang Noodle
+            </p>
+            <ul>
+                <li>Ingredients: minced pork; shiitake mushrooms; minced ginger; cooking wine; minced garlic; green onions; soybean paste; sugar.</li>
+                <li>Add oil to the pot and stir-fry the minced meat, pour in the cooking wine, stir-fry for a while, then import the chopped mushrooms and soybean paste and continue to stir-fry.</li>
+                <li>Add a little sugar, add green onions and continue to stir-fry for a while, then it will be out of the pan.</li>
+                <li>Serve with pre-prepared noodle and enjoy the meal!</li>
+              </ul>
+        </div>
+      </div>
+      <div class="food-item">
+        <img src="Images/BraisedRibs.jpeg" alt="Recipe 2" width="405" height="400" onclick="toggleDescription(2)">
+        <div class="description hidden" id="description2">
+            <p>
+                Braised Ribs
+            </p>
+            <ul>
+                <li>Ingredients: pork ribs; minced giner; soy sauce; cooking wine; minced galic; green onions; </li>
+                <li>Cut the ribs into small pieces and boil in cold water.</li>
+                <li>After the water boils for three minutes, take out the ribs and wash them, and use kitchen paper to absorb excess water.</li>
+                <li>Put oil in the pot and turn on a low heat, then add two tablespoons of white sugar, when the white sugar turns brown, add the ribs and stir-fry.</li>
+                <li>Add ginger and garlic and continue to stir-fry, add soy sauce and cooking wine, stir-fry, add warm water that has not covered the ribs and bring to a boil.</li>
+                <li>After the water boils, turn to low heat and continue to cook for about 30 minutes, then turn to high heat to collect the juice.</li>
+                <li>Serve with pre-prepared rice and enjoy the meal!</li>
+              </ul>
+        </div>
+      </div>
+      
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2023. Yongzhao Ye. Final Project.
+  </footer>
+
+  <!-- Link to JS file -->
+  <script src="script.js"></script>
+</body>
+</html>

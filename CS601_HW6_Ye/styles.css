@@ -1,0 +1,36 @@
+/* Style for the header section of the page */
+.header-section {
+    background-color: #3c648b;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Create a grid layout with two columns for the images */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  /* Style for each image container */
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Add a border around each image */
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  /* Make the images responsive */
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Center the text of the description */
+  p {
+    text-align: center;
+  }
+  

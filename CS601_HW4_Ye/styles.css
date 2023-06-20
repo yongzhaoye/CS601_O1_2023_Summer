@@ -1,0 +1,113 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #d8cbcb;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Form Styles */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Heading Styles */
+  h2 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Input Field Styles */
+  input[type="text"],
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #cfb7b7;
+    border-radius: 4px;
+  }
+  
+  /* Submit Button Styles */
+  input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Label and Input Alignment */
+  section label {
+    display: block;
+    margin-bottom: 5px;
+    white-space: nowrap;
+  }
+  
+  .name-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .options-section {
+    margin-top: 5px;
+  }
+  
+  .options-section div {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .options-section label {
+    margin-right: 10px;
+  }
+  
+  /* Alignment for Gender and Check if apply sections */
+  section:nth-of-type(3),
+  section:nth-of-type(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Symmetrical Alignment for Options */
+  .options-section div {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .options-section label {
+    margin-right: 10px;
+    width: auto;
+    min-width: 1000px;
+  }
+  

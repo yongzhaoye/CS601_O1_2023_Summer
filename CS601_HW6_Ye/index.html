@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Hover</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Include the Vue.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.0/vue.min.js" 
+  integrity="sha512-2v91ndX8jAw9J2IAZ4RnH+lKMOi0PzyFJ1i6D69Nx1RlY2UJpy6r1WIo35HrRkHG4ARj1Xl/xyoh0X9ze+6Y2w==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <!-- The Vue instance is bound to this div element -->
+  <div id="app">
+    <header class="header-section">
+      <h1>My Dog Gallery</h1>
+    </header>
+    <main>
+      <!-- When this button is clicked, the toggleImages method is triggered -->
+      <button v-on:click="toggleImages">{{ buttonLabel }}</button>
+      <!-- Display the number of currently visible images -->
+      <p>{{ images.filter(img => img.isVisible).length }} dogs are currently visible</p>
+      <!-- Create a grid layout for images -->
+      <div class="grid-container">
+        <!-- Loop through each image in the images array -->
+        <!-- Only show the image if its isVisible property is true -->
+        <!-- When the mouse hovers over the image, call the hoverImage method -->
+        <!-- When the mouse stops hovering over the image, call the unhoverImage method -->
+        <div v-for="image in images" :key="image.id" class="image-container" v-if="image.isVisible">
+          <img v-bind:src="image.showing" @mouseover="hoverImage(image.id)" @mouseout="unhoverImage(image.id)" class="responsive-img" />
+          <!-- Display the description of the image -->
+          <p>{{image.description}}</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Include the JavaScript file -->
+  <script src="main.js"></script>
+</body>
+</html>

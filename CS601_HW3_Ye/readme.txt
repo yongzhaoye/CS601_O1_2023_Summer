@@ -1,0 +1,3 @@
+My start page is called "addNumber.html", and other two files are "Script.js" and "styles.css".
+For the week three content, in the Script file I created function for calculating the sum of two numbers, "alert" and "prompt" methods for user input and display. Three "while" loops are used to allow the user to continue adding numbers and checking entered numbers.
+In addition, I also added a "startButton" to enrich the website interface. In the CSS document I have designed some frames and colors for the button, such as "border-radius" makes the button corners rounded, "cursor" is set to pointer to change the mouse cursor to a hand icon when hovering over the button, etc.

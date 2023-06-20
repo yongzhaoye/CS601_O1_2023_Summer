@@ -1,0 +1,16 @@
+{
+    "degrees": [
+      {
+        "school": "Washington University",
+        "program": "Computer Science",
+        "type": "BA",
+        "yearConferred": 2021
+      },
+      {
+        "school": "Boston University",
+        "program": "Information System",
+        "type": "MS",
+        "yearConferred": 2023
+      }
+    ]
+  }
